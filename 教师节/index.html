@@ -70,7 +70,9 @@ public class Life {
          try {
              if(me.getEducation() instanceof worls.getEducation()){
                  me.learnMore();
-             }
+             }else{
+			 throw new SecurityException();
+			 }
          }catch (SecurityException e){
              Steam.say(&quot;Something Trouble, you are not authorized!! Please login！&quot;);
          }
