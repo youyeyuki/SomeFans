@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>9.10 祝教师们教师节快乐</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	/*src: url('digital-7_mono.ttf') format("truetype");*/
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/ye.js"></script>
+
+</head>
+
+<body>
+	<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments"><pre>
+			
+/**
+*
+* The Program Just Thanks for all the things  teachers do for ours.
+* @author youye
+*/
+			</pre></span>
+			<span class="keyword"><pre>
+public class Life {
+
+     public static void main(String[] args) {
+
+
+         String[] words= {&quot;Have a nick Day&quot;,&quot;Every success in you business&quot;,
+                 &quot;You must take care of you health during busy working lives&quot;
+         ,&quot;wishing you every second of you life is a happy one&quot;};
+
+         Thing me = new Student();
+         Thing you = new Teacher();
+         World world = new World();
+
+
+
+         world.timeTravelForTwo(&quot;2014-09-01&quot;,me,you);
+         world.timeTravelForTwo(&quot;2015-09-15&quot;,me,you);
+         world.unite(me,you);
+
+         while (me.getKnowledge()&lt;you.getKnowledge()){
+
+             you.TeachMeKnowledge(you.getKnowledge()-me.getKnowledge());
+
+         }
+
+         while(me.isTrouble()){
+             me.workHard();
+             if(you.isFreeTime()){
+                 me.getHelpFrom(you);
+                 break;
+             }
+         }
+
+         world.changeRules(&quot;Examination-oriented&quot;);
+         world.setEducation(&quot;Steam&quot;);
+         try {
+             if(me.getEducation() instanceof worls.getEducation()){
+                 me.learnMore();
+             }
+         }catch (SecurityException e){
+             Steam.say(&quot;Something Trouble, you are not authorized!! Please login！&quot;);
+         }
+
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+         world.tryFixThing();
+
+
+         if(!world.checkRightEducation(me.getEducation())&amp;&amp;me.getAge&lt;=world.getAge()){
+             world.changeEducationWho(me);
+         }else{
+             me.setTrouble(&quot;who we are.&quot;);
+             me.setTrouble(&quot;where we go.&quot;);
+             me.setTrouble(&quot;what we do.&quot;);
+         }
+
+         while (me.wait()){
+             Thread.sleep(me.countTimeWasteSeconds()*1000);
+
+             Thread wayToOut= new Thread(new Runnable() {
+                 @Override
+                 public void run() {
+                     if(me.isfindWay()){
+                         me.setWait(false);
+                     }
+                 }
+             });
+             wayToOut.start();
+
+             if(you.findirregular(me)){
+
+                 you.giveAdvice(me);
+                 you.influencesWasteSeconds(me);
+
+             }
+         }
+
+
+
+
+         me.addFeeling(&quot;Irritable&quot;);
+         me.addReasons(&quot;just me working ..&quot;,&quot;so much bugs &quot;,&quot;not perfect code&quot;);
+
+
+        you.TeachMe(&quot;More Patient&quot;);
+        you.TeachMe(&quot;Hard Work now，Future Happy!&quot;);
+
+
+         me.update();
+         me.update();
+         me.update();
+         me.update();
+         me.update();
+         me.update();
+         me.update();
+         me.update();
+
+         world.timeTravelForTwo(&quot;2015-09-15&quot;,me,you);
+         world.timeTravelForTwo(&quot;2017-09-10&quot;,me,you);
+         world.unite(me,you);
+
+        if(world.IsTeacherDay()){
+            if(!me.hasBlessing()){
+                for (String word:words ) {
+                    me.ThankYou(you,word);
+                }
+            }
+        }
+
+         System.out.println(world.getStatus().toString());
+         System.out.println(&quot;All in all ,Thank  you Teachers!&quot;);
+
+      }
+}
+
+			</pre></span>
+			<pre style=" font-size:23px; color:#FFB6C1">
+	我想对你说:
+	  谢谢您，我的老师们！</pre><br />
+			
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					敬爱的老师们，这是我们在一起的度过的学校时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+				 为你无私的贡献献上祝福<br/>
+					<div class="signature">你的学生</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+
+	
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date("2014-09-01");
+	console.log(together);
+//fix some bug...
+var change_time=50
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "你的浏览器不支持HTML5<br/>推荐使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 5);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<embed src="http://www.xiami.com/widget/49349783_354805937_235_346_FF8719_494949_1/collectPlayer.swf" type="application/x-shockwave-flash" width="0" height="0" wmode="opaque"></embed>
+	
+<div style="text-align:center;clear:both">
+<p style=" font-size:50px; color:#FFB6C1"> 感谢老师们的无私奉献！</p>
+<p></p>
+</div>
+</body>
+</html>
